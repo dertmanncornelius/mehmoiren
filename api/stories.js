@@ -65,6 +65,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ stories: next });
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ error: "Speichern hat nicht geklappt. Bitte gleich nochmal versuchen." });
+    const reason = err && err.message ? " (" + err.message + ")" : "";
+    return res.status(500).json({ error: "Das hat nicht geklappt" + reason + "." });
   }
 }

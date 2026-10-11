@@ -14,7 +14,8 @@ Eine kleine Webseite (`index.html` + `app.js`) mit einer Server-Funktion
    Projekt **verbinden** (setzt `BLOB_READ_WRITE_TOKEN` automatisch).
 3. **Deployments → … → Redeploy**, damit der Speicher aktiv ist.
 
-Ohne Schritt 2 lassen sich Geschichten lesen, aber nicht dauerhaft speichern.
+Ohne Schritt 2 zeigt die App „Kein Blob-Speicher mit dem Projekt verbunden“.
+Private und öffentliche Blob-Speicher funktionieren beide.
 
 ## Anmeldung
 
